@@ -10,13 +10,13 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import acubedLogo from '../images/Acubed.png';
 import alEssaLogo from '../images/AlEssa.png';
-import berkeleyLogo from '../images/Seal_of_University_of_California,_Berkeley.svg';
 import colonyLogo from '../images/Colony.png';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import profilepic from '../images/profilepic.jpg';
+import berkeleyLogo from '../images/Seal_of_University_of_California,_Berkeley.svg';
 import xtillionLogo from '../images/Xtillion.png';
 import {
   About,
