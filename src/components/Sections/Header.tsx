@@ -12,7 +12,7 @@ export const headerID = 'headerNav';
 const Header: FC = memo(() => {
   const [currentSection, setCurrentSection] = useState<SectionId | null>(null);
   const navSections = useMemo(
-    () => [SectionId.About, SectionId.Resume, SectionId.Portfolio, SectionId.Contact],
+    () => [SectionId.About, SectionId.Resume, SectionId.Contact],
     [],
   );
 
@@ -124,6 +124,21 @@ const NavItem: FC<{
   inactiveClass: string;
   onClick?: () => void;
 }> = memo(({section, current, inactiveClass, activeClass, onClick}) => {
+  // Special handling for Contact - redirect to LinkedIn
+  if (section === SectionId.Contact) {
+    return (
+      <a
+        className={classNames(current ? activeClass : inactiveClass)}
+        href="https://www.linkedin.com/in/elijahjacob/"
+        key={section}
+        onClick={onClick}
+        rel="noopener noreferrer"
+        target="_blank">
+        {section}
+      </a>
+    );
+  }
+  
   return (
     <Link
       className={classNames(current ? activeClass : inactiveClass)}
