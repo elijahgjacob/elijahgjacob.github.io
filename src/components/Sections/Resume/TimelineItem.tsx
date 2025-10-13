@@ -19,7 +19,7 @@ const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
         <div className="flex items-center justify-center gap-x-2 md:justify-start">
           {locationUrl ? (
             <a
-              className="flex-1 text-sm font-medium italic hover:text-orange-600 hover:underline sm:flex-none"
+              className="flex-1 text-sm font-medium italic hover:text-blue-600 hover:underline sm:flex-none"
               href={locationUrl}
               rel="noopener noreferrer"
               target="_blank">
