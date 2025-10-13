@@ -115,36 +115,28 @@ export const skills: SkillGroup[] = [
         level: 9,
       },
       {
-        name: 'JavaScript/TypeScript',
-        level: 8,
-      },
-      {
         name: 'SQL',
-        level: 8,
+        level: 6,
       },
       {
         name: 'Java',
-        level: 7,
+        level: 6,
       },
     ],
   },
   {
-    name: 'Data Science',
+    name: 'AI/ML',
     skills: [
       {
-        name: 'Machine Learning',
+        name: 'LangSmith',
         level: 8,
       },
       {
-        name: 'Data Analysis',
-        level: 9,
+        name: 'Model Performance Evaluation',
+        level: 8,
       },
       {
-        name: 'Computer Vision',
-        level: 7,
-      },
-      {
-        name: 'Data Pipelines',
+        name: 'MCP Architecture',
         level: 8,
       },
     ],
@@ -153,20 +145,16 @@ export const skills: SkillGroup[] = [
     name: 'Soft Skills',
     skills: [
       {
-        name: 'Problem Solving',
+        name: 'Problem-Solving',
         level: 9,
       },
       {
-        name: 'Team Collaboration',
+        name: 'Project Management',
         level: 9,
       },
       {
         name: 'Communication',
-        level: 8,
-      },
-      {
-        name: 'Leadership',
-        level: 8,
+        level: 9,
       },
     ],
   },
@@ -179,10 +167,6 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Fitness',
-        level: 10,
-      },
-      {
-        name: 'Languages',
         level: 10,
       },
       {
