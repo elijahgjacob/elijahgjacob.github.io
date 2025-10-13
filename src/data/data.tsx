@@ -62,13 +62,14 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a <strong className="text-stone-100">Software Engineer</strong> currently working
+        I'm an <strong className="text-stone-100">AI-native Software Engineer</strong> currently working
         at <strong className="text-stone-100">Xtillion</strong> in San Juan, Puerto Rico.
         I graduated from UC Berkeley with a degree in Economics and Data Science.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I specialize in building scalable applications and working with data engineering pipelines.
-        I'm passionate about leveraging technology to solve complex problems.
+        I combine <strong className="text-stone-100">solid engineering fundamentals</strong> with 
+        <strong className="text-stone-100"> extremely high proficiency in AI tools</strong>, 
+        building scalable applications and leveraging cutting-edge AI to solve complex problems.
       </p>
     </>
   ),
