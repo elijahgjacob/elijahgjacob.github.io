@@ -21,6 +21,7 @@ const Hero: FC = memo(() => {
       
       return () => clearTimeout(timeout);
     }
+    return undefined;
   }, [currentIndex, name]);
 
   // Split text to style "Elijah Jacob" in blue
