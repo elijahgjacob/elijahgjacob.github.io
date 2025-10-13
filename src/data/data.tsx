@@ -8,11 +8,16 @@ import {
 
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
+import acubedLogo from '../images/Acubed.png';
+import alEssaLogo from '../images/AlEssa.png';
+import berkeleyLogo from '../images/Seal_of_University_of_California,_Berkeley.svg';
+import colonyLogo from '../images/Colony.png';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import profilepic from '../images/profilepic.jpg';
+import xtillionLogo from '../images/Xtillion.png';
 import {
   About,
   ContactSection,
@@ -205,6 +210,7 @@ export const education: TimelineItem[] = [
     location: 'University of California, Berkeley',
     title: 'Bachelor of Arts in Economics, Data Science',
     content: <p>Studied economics, data science, and computer science with a focus on machine learning, statistical analysis, and quantitative methods. Developed strong analytical and problem-solving skills through rigorous coursework and research projects.</p>,
+    logo: berkeleyLogo,
   },
 ];
 
@@ -218,6 +224,8 @@ export const experience: TimelineItem[] = [
         Currently working as a Software Engineer at Xtillion in San Juan, Puerto Rico. Building scalable software solutions and contributing to innovative projects in a dynamic startup environment.
       </p>
     ),
+    logo: xtillionLogo,
+    locationUrl: 'https://xtillion.com',
   },
   {
     date: 'May 2024 - August 2024',
@@ -228,6 +236,8 @@ export const experience: TimelineItem[] = [
         Co-founded Colony Inc. in San Francisco, CA. Led product development and technical strategy for a startup focused on innovative solutions. Managed full product lifecycle from concept to deployment.
       </p>
     ),
+    logo: colonyLogo,
+    locationUrl: '/assets/colony-pitch-deck.pdf',
   },
   {
     date: 'May 2023 - August 2023',
@@ -238,16 +248,20 @@ export const experience: TimelineItem[] = [
         Worked on data engineering projects at Acubed by Airbus in Sunnyvale, CA. Developed and optimized data pipelines, worked with large-scale datasets, and contributed to aviation technology innovation projects.
       </p>
     ),
+    logo: acubedLogo,
+    locationUrl: 'https://acubed.airbus.com',
   },
   {
-    date: 'Previous',
-    location: 'Al-Essa Medical',
-    title: 'Technical Role',
+    date: 'May 2020 - August 2022',
+    location: 'Al-Essa Med.',
+    title: 'Data Analyst Intern',
     content: (
       <p>
         Contributed to healthcare technology projects at Al-Essa Medical in Kuwait City, Kuwait. Gained experience in medical technology and international work environments.
       </p>
     ),
+    logo: alEssaLogo,
+    locationUrl: 'https://alessaonline.com',
   },
 ];
 
@@ -261,8 +275,7 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'elijahgjacob@berkeley.edu',
-      href: 'mailto:elijahgjacob@berkeley.edu',
+      text: 'elijahgjacob(at)berkeley.edu',
     },
     {
       type: ContactType.Location,
