@@ -32,7 +32,7 @@ const Hero: FC = memo(() => {
     return (
       <>
         {prefix}
-        <span className="text-blue-500">{displayedText.substring(prefix.length)}</span>
+        <span className="text-blue-700">{displayedText.substring(prefix.length)}</span>
       </>
     );
   };
@@ -62,7 +62,7 @@ const Hero: FC = memo(() => {
                 <a
                   className={classNames(
                     'flex gap-x-2 rounded-full border-2 bg-none px-4 py-2 text-sm font-medium text-white ring-offset-gray-700/80 hover:bg-gray-700/80 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base',
-                    primary ? 'border-blue-600 ring-blue-600' : 'border-white ring-white',
+                    primary ? 'border-blue-800 ring-blue-800' : 'border-white ring-white',
                   )}
                   href={href}
                   key={text}>
