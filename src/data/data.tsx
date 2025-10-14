@@ -2,6 +2,7 @@ import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
+  HeartIcon,
   LanguageIcon,
   MapIcon,
   SparklesIcon,
@@ -102,6 +103,7 @@ export const aboutData: About = {
     {label: 'Study', text: 'UC Berkeley', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Xtillion', Icon: BuildingOffice2Icon},
     {label: 'Languages', text: 'English, Malayalam, Spanish, Arabic', Icon: LanguageIcon},
+    {label: 'Passions', text: 'People, Aviation, Travel', Icon: HeartIcon},
     {label: 'Interests', text: 'AI/ML, Data Engineering, Software Development', Icon: SparklesIcon},
   ],
 };
