@@ -49,10 +49,10 @@ const Hero: FC = memo(() => {
           src={imageSrc}
         />
         {/* Gradient overlay for better text contrast */}
-        <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/30 via-black/20 to-black/40" />
+        <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/30 via-black/20 to-black/40 transition-all duration-500 hover:from-black/60 hover:via-black/50 hover:to-black/70" />
 
         <div className="z-10 max-w-screen-lg px-4 lg:px-0">
-          <div className="group relative flex flex-col items-center gap-y-6 overflow-hidden rounded-2xl border border-white/20 bg-gradient-to-br from-gray-900/60 to-gray-800/40 p-8 shadow-2xl backdrop-blur-xl transition-all duration-500 hover:shadow-blue-500/30">
+          <div className="group relative flex flex-col items-center gap-y-6 overflow-hidden rounded-2xl border border-white/20 bg-gradient-to-br from-gray-900/60 to-gray-800/40 p-8 shadow-2xl backdrop-blur-xl transition-all duration-500 hover:from-black/80 hover:to-black/70">
             {/* Animated border glow */}
             <div
               className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-700 opacity-0 blur transition-opacity duration-500 group-hover:opacity-50"
