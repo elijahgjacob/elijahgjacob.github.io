@@ -12,16 +12,10 @@ const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
   return (
     <div ref={ref}>
       <SpotlightCard
-        className={`group transform-gpu rounded-xl bg-white p-6 shadow-md transition-all duration-700 last:mb-0 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-500/20 md:mb-6 ${
+        className={`group transform-gpu rounded-xl bg-white p-6 shadow-md transition-all duration-700 last:mb-0 hover:-translate-y-1 hover:shadow-2xl md:mb-6 ${
           isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'
         }`}>
-        {/* Animated border on hover */}
-        <div
-          className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-700 opacity-0 blur-sm transition-opacity duration-300 group-hover:opacity-20"
-          style={{backgroundSize: '200% 200%', animation: 'border-flow 3s ease infinite'}}
-        />
-
-        <div className="relative flex flex-col text-center md:text-left">
+      <div className="relative flex flex-col text-center md:text-left">
           <div className="flex flex-col pb-3">
             <div className="flex items-center justify-center gap-x-3 md:justify-start">
               {logo && (

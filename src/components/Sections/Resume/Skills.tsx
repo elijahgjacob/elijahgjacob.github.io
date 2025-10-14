@@ -11,7 +11,7 @@ export const SkillGroup: FC<PropsWithChildren<{skillGroup: SkillGroupType}>> = m
   return (
     <div ref={ref}>
       <SpotlightCard
-        className={`transform-gpu rounded-xl bg-white p-6 shadow-lg transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/20 ${
+        className={`transform-gpu rounded-xl bg-white p-6 shadow-lg transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
         <span className="mb-4 block text-center text-lg font-bold text-neutral-800">{name}</span>
