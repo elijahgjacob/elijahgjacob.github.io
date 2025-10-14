@@ -25,7 +25,7 @@ const About: FC = memo(() => {
               className={`col-span-1 flex justify-center transition-all duration-700 md:justify-start ${
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
               }`}>
-              <div className="group relative h-64 w-48 overflow-hidden rounded-2xl shadow-xl ring-4 ring-white/10 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 hover:ring-cyan-500/50 md:h-full md:w-64">
+              <div className="group relative h-64 w-64 overflow-hidden rounded-2xl shadow-xl ring-4 ring-white/10 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 hover:ring-cyan-500/50 md:h-full md:w-80">
                 {/* Neon glow effect */}
                 <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 opacity-0 blur-lg transition-opacity duration-300 group-hover:opacity-30" />
                 <Image
