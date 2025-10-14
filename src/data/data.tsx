@@ -217,7 +217,7 @@ export const education: TimelineItem[] = [
       <p>
         Studied economics, data science, and computer science with a focus on machine learning, statistical analysis,
         and quantitative methods. Developed strong analytical and problem-solving skills through rigorous coursework and
-        research projects.
+        research projects - Most importantly, learned how to learn.
       </p>
     ),
     logo: berkeleyLogo,
@@ -259,6 +259,7 @@ export const experience: TimelineItem[] = [
       <p>
         Worked on data engineering projects at Acubed by Airbus in Sunnyvale, CA. Developed and optimized data
         pipelines, worked with large-scale datasets, and contributed to aviation technology innovation projects.
+        Learned I could build a career out of my passion at the intersection of aviation and AI.
       </p>
     ),
     logo: acubedLogo,
@@ -271,7 +272,7 @@ export const experience: TimelineItem[] = [
     content: (
       <p>
         Contributed to healthcare technology projects at Al-Essa Medical in Kuwait City, Kuwait. Gained experience in
-        medical technology and international work environments.
+        medical technology and international work environments. Self-learned the fundamentals of data science before entering college.
       </p>
     ),
     logo: alEssaLogo,
