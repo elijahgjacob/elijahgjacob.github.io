@@ -52,7 +52,7 @@ const Hero: FC = memo(() => {
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/30 via-black/20 to-black/40" />
 
         <div className="z-10 max-w-screen-lg px-4 lg:px-0">
-          <div className="group relative flex flex-col items-center gap-y-6 overflow-hidden rounded-2xl border border-white/20 bg-gradient-to-br from-gray-900/60 to-gray-800/40 p-8 shadow-2xl backdrop-blur-xl transition-all duration-500 hover:shadow-2xl">
+          <div className="group relative flex flex-col items-center gap-y-6 overflow-hidden rounded-2xl border border-white/20 bg-gradient-to-br from-gray-900/20 to-gray-800/10 p-8 shadow-2xl backdrop-blur-xl transition-all duration-500 hover:shadow-2xl">
             {/* Animated border glow - darker on hover */}
             <div className="absolute -inset-0.5 rounded-2xl bg-black opacity-0 blur transition-opacity duration-500 group-hover:opacity-40" />
 
