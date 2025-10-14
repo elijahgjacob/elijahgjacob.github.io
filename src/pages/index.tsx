@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic';
 import {FC, memo} from 'react';
 
+import AnimatedBackground from '../components/AnimatedBackground';
 import FloatingButtons from '../components/FloatingButtons';
 import Page from '../components/Layout/Page';
 import ScrollProgress from '../components/ScrollProgress';
@@ -17,6 +18,7 @@ const Home: FC = memo(() => {
   const {title, description} = homePageMeta;
   return (
     <Page description={description} title={title}>
+      <AnimatedBackground />
       <ScrollProgress />
       <FloatingButtons />
       <Header />

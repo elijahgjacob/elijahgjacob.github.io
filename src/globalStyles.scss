@@ -51,3 +51,13 @@ th {
 th {
   font-weight: 600;
 }
+
+/* Custom animations */
+@keyframes gridMove {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(40px);
+  }
+}

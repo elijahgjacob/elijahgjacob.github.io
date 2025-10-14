@@ -52,8 +52,16 @@ const Hero: FC = memo(() => {
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/30 via-black/20 to-black/40" />
 
         <div className="z-10 max-w-screen-lg px-4 lg:px-0">
-          <div className="flex flex-col items-center gap-y-6 rounded-2xl border border-white/20 bg-gradient-to-br from-gray-900/60 to-gray-800/40 p-8 shadow-2xl backdrop-blur-xl transition-all duration-500 hover:shadow-blue-900/20">
-            <h1 className="bg-gradient-to-r from-white to-blue-100 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl lg:text-7xl">
+          <div className="group relative flex flex-col items-center gap-y-6 overflow-hidden rounded-2xl border border-white/20 bg-gradient-to-br from-gray-900/60 to-gray-800/40 p-8 shadow-2xl backdrop-blur-xl transition-all duration-500 hover:shadow-blue-500/30">
+            {/* Animated border glow */}
+            <div
+              className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-700 opacity-0 blur transition-opacity duration-500 group-hover:opacity-50"
+              style={{backgroundSize: '200% 200%', animation: 'border-flow 3s ease infinite'}}
+            />
+
+            <h1
+              className="relative bg-gradient-to-r from-white via-blue-100 to-cyan-200 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl lg:text-7xl"
+              style={{backgroundSize: '200% auto', animation: 'shimmer 4s linear infinite'}}>
               {renderTypedText()}
               <span className="animate-pulse">|</span>
             </h1>
