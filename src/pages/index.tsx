@@ -5,6 +5,7 @@ import AnimatedBackground from '../components/AnimatedBackground';
 import FloatingButtons from '../components/FloatingButtons';
 import Page from '../components/Layout/Page';
 import ScrollProgress from '../components/ScrollProgress';
+import SectionIndicator from '../components/SectionIndicator';
 import About from '../components/Sections/About';
 import Footer from '../components/Sections/Footer';
 import Hero from '../components/Sections/Hero';
@@ -21,6 +22,7 @@ const Home: FC = memo(() => {
       <AnimatedBackground />
       <ScrollProgress />
       <FloatingButtons />
+      <SectionIndicator />
       <Header />
       <Hero />
       <About />

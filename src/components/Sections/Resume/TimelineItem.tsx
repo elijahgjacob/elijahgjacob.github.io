@@ -15,7 +15,7 @@ const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
         className={`group transform-gpu rounded-xl bg-white p-6 shadow-md transition-all duration-700 last:mb-0 hover:-translate-y-1 hover:shadow-2xl md:mb-6 ${
           isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'
         }`}>
-      <div className="relative flex flex-col text-center md:text-left">
+        <div className="relative flex flex-col text-center md:text-left">
           <div className="flex flex-col pb-3">
             <div className="flex items-center justify-center gap-x-3 md:justify-start">
               {logo && (

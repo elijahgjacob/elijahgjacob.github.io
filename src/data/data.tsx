@@ -258,8 +258,8 @@ export const experience: TimelineItem[] = [
     content: (
       <p>
         Worked on data engineering projects at Acubed by Airbus in Sunnyvale, CA. Developed and optimized data
-        pipelines, worked with large-scale datasets, and contributed to aviation technology innovation projects.
-        Learned I could build a career out of my passion at the intersection of aviation and AI.
+        pipelines, worked with large-scale datasets, and contributed to aviation technology innovation projects. Learned
+        I could build a career out of my passion at the intersection of aviation and AI.
       </p>
     ),
     logo: acubedLogo,
@@ -272,7 +272,8 @@ export const experience: TimelineItem[] = [
     content: (
       <p>
         Contributed to healthcare technology projects at Al-Essa Medical in Kuwait City, Kuwait. Gained experience in
-        medical technology and international work environments. Self-learned the fundamentals of data science before entering college.
+        medical technology and international work environments. Self-learned the fundamentals of data science before
+        entering college.
       </p>
     ),
     logo: alEssaLogo,
