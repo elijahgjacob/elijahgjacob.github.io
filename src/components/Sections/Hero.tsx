@@ -61,7 +61,12 @@ const Hero: FC = memo(() => {
 
             <h1
               className="relative bg-gradient-to-r from-white via-blue-100 to-cyan-200 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl lg:text-7xl"
-              style={{backgroundSize: '200% auto', animation: 'shimmer 4s linear infinite'}}>
+              style={{
+                backgroundSize: '200% auto',
+                animation: 'shimmer 4s linear infinite',
+                WebkitTextStroke: '2px rgba(255, 255, 255, 0.3)',
+                paintOrder: 'stroke fill',
+              }}>
               {renderTypedText()}
               <span className="animate-pulse">|</span>
             </h1>

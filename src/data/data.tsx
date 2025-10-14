@@ -197,7 +197,7 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage2,
   },
   {
-    title: 'Colony Inc. Platform',
+    title: 'Colony Inc. Pitch Deck',
     description:
       'Co-founded and developed the technical infrastructure for Colony Inc., focusing on innovative solutions and product development.',
     url: 'https://github.com',
