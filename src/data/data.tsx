@@ -11,7 +11,7 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import acubedLogo from '../images/Acubed.png';
 import alEssaLogo from '../images/AlEssa.png';
 import colonyLogo from '../images/Colony.png';
-import heroImage from '../images/header-background.webp';
+import heroImage from '../images/hero-background.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
