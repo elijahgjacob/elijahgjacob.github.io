@@ -17,7 +17,7 @@ import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import profilepic from '../images/profilepic.jpg';
 import berkeleyLogo from '../images/Seal_of_University_of_California,_Berkeley.svg';
-import xtillionLogo from '../images/Xtillion.png';
+import xtillionLogo from '../images/Xtillion-new.jpg';
 import {
   About,
   ContactSection,
