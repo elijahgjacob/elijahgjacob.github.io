@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import Image from 'next/image';
-import {FC, memo, useEffect, useState} from 'react';
+import {FC, memo} from 'react';
 
 import {aboutData, heroData} from '../../data/data';
 import {useScrollAnimation} from '../../hooks/useScrollAnimation';
@@ -10,79 +10,12 @@ import {SectionId} from '../../data/data';
 
 const About: FC = memo(() => {
   const {profileImageSrc, description, aboutItems} = aboutData;
-  const {name, description: heroDescription, actions} = heroData;
+  const {actions} = heroData;
   const {ref, isVisible} = useScrollAnimation(0.2);
-
-  // Typing animation for hero name
-  const [displayedText, setDisplayedText] = useState('');
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    if (currentIndex < name.length) {
-      const timeout = setTimeout(() => {
-        setDisplayedText(prev => prev + name[currentIndex]);
-        setCurrentIndex(prev => prev + 1);
-      }, 100);
-
-      return () => clearTimeout(timeout);
-    }
-    return undefined;
-  }, [currentIndex, name]);
-
-  // Split text to style "Elijah Jacob" in blue
-  const renderTypedText = () => {
-    const prefix = "Hi! I'm ";
-    if (displayedText.length <= prefix.length) {
-      return <>{displayedText}</>;
-    }
-    return (
-      <>
-        {prefix}
-        <span className="text-blue-700">{displayedText.substring(prefix.length)}</span>
-      </>
-    );
-  };
 
   return (
     <Section className="bg-gradient-to-b from-neutral-800 to-neutral-900" sectionId={SectionId.About}>
       <div className="flex flex-col gap-y-12">
-        {/* Hero Content Section */}
-        <div className="flex flex-col items-center gap-y-6 text-center">
-          <h1
-            className="bg-gradient-to-r from-white via-blue-100 to-cyan-200 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl lg:text-6xl"
-            style={{
-              backgroundSize: '200% auto',
-              animation: 'shimmer 4s linear infinite',
-              WebkitTextStroke: '2px rgba(255, 255, 255, 0.3)',
-              paintOrder: 'stroke fill',
-            }}>
-            {renderTypedText()}
-            <span className="animate-pulse">|</span>
-          </h1>
-          <div className="max-w-3xl">{heroDescription}</div>
-          <div className="flex gap-x-10 text-neutral-100">
-            <Socials />
-          </div>
-          <div className="flex w-full justify-center gap-x-4">
-            {actions.map(({href, text, primary, Icon}) => (
-              <a
-                className={classNames(
-                  'group flex gap-x-2 rounded-full border-2 px-6 py-3 text-sm font-medium text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base',
-                  primary
-                    ? 'border-blue-800 bg-gradient-to-r from-blue-700 to-blue-900 ring-blue-800 hover:from-blue-600 hover:to-blue-800'
-                    : 'border-white bg-white/10 ring-white backdrop-blur-sm hover:bg-white/20',
-                )}
-                href={href}
-                key={text}>
-                {text}
-                {Icon && (
-                  <Icon className="h-5 w-5 text-white transition-transform group-hover:scale-110 sm:h-6 sm:w-6" />
-                )}
-              </a>
-            ))}
-          </div>
-        </div>
-
         {/* About Me Section */}
         <div
           className={classNames('grid grid-cols-1 gap-y-8 md:gap-x-8', {'md:grid-cols-4': !!profileImageSrc})}
@@ -110,12 +43,38 @@ const About: FC = memo(() => {
               }`,
               {'md:col-span-3': !!profileImageSrc},
             )}>
-            <div className="flex flex-col gap-y-3">
+            <div className="flex flex-col gap-y-6">
               <h2 className="bg-gradient-to-r from-white to-blue-200 bg-clip-text text-3xl font-bold text-transparent">
                 About me
               </h2>
               <p className="prose prose-sm text-gray-300 sm:prose-base">{description}</p>
+              
+              {/* Action Buttons and Social Links */}
+              <div className="flex flex-col items-center gap-y-4 md:items-start">
+                <div className="flex gap-x-10 text-neutral-100">
+                  <Socials />
+                </div>
+                <div className="flex w-full justify-center gap-x-4 md:justify-start">
+                  {actions.map(({href, text, primary, Icon}) => (
+                    <a
+                      className={classNames(
+                        'group flex gap-x-2 rounded-full border-2 px-6 py-3 text-sm font-medium text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base',
+                        primary
+                          ? 'border-blue-800 bg-gradient-to-r from-blue-700 to-blue-900 ring-blue-800 hover:from-blue-600 hover:to-blue-800'
+                          : 'border-white bg-white/10 ring-white backdrop-blur-sm hover:bg-white/20',
+                      )}
+                      href={href}
+                      key={text}>
+                      {text}
+                      {Icon && (
+                        <Icon className="h-5 w-5 text-white transition-transform group-hover:scale-110 sm:h-6 sm:w-6" />
+                      )}
+                    </a>
+                  ))}
+                </div>
+              </div>
             </div>
+            
             <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               {aboutItems.map(({label, text, Icon}, idx) => (
                 <li

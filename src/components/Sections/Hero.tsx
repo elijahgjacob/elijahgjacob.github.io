@@ -1,12 +1,40 @@
 import {ChevronDownIcon} from '@heroicons/react/24/outline';
 import Image from 'next/image';
-import {FC, memo} from 'react';
+import {FC, memo, useEffect, useState} from 'react';
 
 import {heroData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 
 const Hero: FC = memo(() => {
-  const {imageSrc} = heroData;
+  const {imageSrc, name} = heroData;
+  const [displayedText, setDisplayedText] = useState('');
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    if (currentIndex < name.length) {
+      const timeout = setTimeout(() => {
+        setDisplayedText(prev => prev + name[currentIndex]);
+        setCurrentIndex(prev => prev + 1);
+      }, 100);
+
+      return () => clearTimeout(timeout);
+    }
+    return undefined;
+  }, [currentIndex, name]);
+
+  // Split text to style "Elijah Jacob" in blue
+  const renderTypedText = () => {
+    const prefix = "Hi! I'm ";
+    if (displayedText.length <= prefix.length) {
+      return <>{displayedText}</>;
+    }
+    return (
+      <>
+        {prefix}
+        <span className="text-blue-700">{displayedText.substring(prefix.length)}</span>
+      </>
+    );
+  };
 
   return (
     <Section noPadding sectionId={SectionId.Hero}>
@@ -20,6 +48,21 @@ const Hero: FC = memo(() => {
         />
         {/* Gradient overlay for better text contrast */}
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/30 via-black/20 to-black/40" />
+
+        {/* Typing animation heading */}
+        <div className="z-10 flex items-center justify-center px-4">
+          <h1
+            className="bg-gradient-to-r from-white via-blue-100 to-cyan-200 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl lg:text-7xl"
+            style={{
+              backgroundSize: '200% auto',
+              animation: 'shimmer 4s linear infinite',
+              WebkitTextStroke: '2px rgba(255, 255, 255, 0.3)',
+              paintOrder: 'stroke fill',
+            }}>
+            {renderTypedText()}
+            <span className="animate-pulse">|</span>
+          </h1>
+        </div>
 
         <div className="absolute inset-x-0 bottom-6 flex justify-center">
           <a

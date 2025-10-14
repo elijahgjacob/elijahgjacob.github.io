@@ -95,9 +95,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I'm a software engineer with a background in economics and data science from UC Berkeley. 
-  I have experience in building scalable software solutions, data engineering pipelines, and full-stack applications.
-  I'm passionate about using technology to create impactful solutions and continuously learning new technologies.`,
+  description: `I'm an AI-native Software Engineer currently working at Xtillion in San Juan, Puerto Rico. I graduated from UC Berkeley with a degree in Economics and Data Science. I combine solid engineering fundamentals with extremely high proficiency in AI tools, building scalable applications and leveraging cutting-edge AI to solve complex problems. I have experience in building scalable software solutions, data engineering pipelines, and full-stack applications, and I'm passionate about using technology to create impactful solutions and continuously learning new technologies.`,
   aboutItems: [
     {label: 'Location', text: 'San Juan, Puerto Rico', Icon: MapIcon},
     {label: 'Study', text: 'UC Berkeley', Icon: AcademicCapIcon},
