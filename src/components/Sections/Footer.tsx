@@ -16,7 +16,7 @@ const Footer: FC = memo(() => (
       </a>
     </div>
     <div className="flex flex-col items-center gap-y-6">
-      <div className="flex gap-x-6 text-neutral-500">
+      <div className="flex gap-x-10 text-neutral-500">
         <Socials />
       </div>
       <a

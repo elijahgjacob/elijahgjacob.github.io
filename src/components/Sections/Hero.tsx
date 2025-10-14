@@ -58,7 +58,7 @@ const Hero: FC = memo(() => {
               <span className="animate-pulse">|</span>
             </h1>
             {description}
-            <div className="flex gap-x-6 text-neutral-100">
+            <div className="flex gap-x-10 text-neutral-100">
               <Socials />
             </div>
             <div className="flex w-full justify-center gap-x-4">
