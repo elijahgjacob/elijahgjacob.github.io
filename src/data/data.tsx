@@ -130,7 +130,7 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'AI/ML & Data Science',
+    name: 'AI/ML Frameworks',
     skills: [
       {
         name: 'LangSmith/LangChain',
@@ -140,6 +140,15 @@ export const skills: SkillGroup[] = [
         name: 'TensorFlow/PyTorch',
         level: 7,
       },
+      {
+        name: 'Model Performance Evaluation',
+        level: 8,
+      },
+    ],
+  },
+  {
+    name: 'Data Science Libraries',
+    skills: [
       {
         name: 'Pandas/NumPy',
         level: 8.5,
@@ -151,10 +160,6 @@ export const skills: SkillGroup[] = [
       {
         name: 'OpenCV',
         level: 7,
-      },
-      {
-        name: 'Model Performance Evaluation',
-        level: 8,
       },
     ],
   },
@@ -172,10 +177,6 @@ export const skills: SkillGroup[] = [
       {
         name: 'Git/GitHub',
         level: 9,
-      },
-      {
-        name: 'CI/CD',
-        level: 7,
       },
     ],
   },
@@ -197,24 +198,7 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Soft Skills',
-    skills: [
-      {
-        name: 'Problem-Solving',
-        level: 9,
-      },
-      {
-        name: 'Project Management',
-        level: 9,
-      },
-      {
-        name: 'Communication',
-        level: 9,
-      },
-    ],
-  },
-  {
-    name: 'Domain Knowledge',
+    name: 'Domain Expertise',
     skills: [
       {
         name: 'Aviation Technology',
