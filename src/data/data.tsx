@@ -212,7 +212,7 @@ export const education: TimelineItem[] = [
   {
     date: 'May 2024',
     location: 'University of California, Berkeley',
-    title: 'Bachelor of Arts in Economics, Data Science',
+    title: 'B.A. in Economics, Data Science',
     content: (
       <p>
         Studied economics, data science, and computer science with a focus on machine learning, statistical analysis,
