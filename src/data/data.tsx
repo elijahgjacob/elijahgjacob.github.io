@@ -2,6 +2,7 @@ import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
+  LanguageIcon,
   MapIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
@@ -100,6 +101,7 @@ export const aboutData: About = {
     {label: 'Location', text: 'San Juan, Puerto Rico', Icon: MapIcon},
     {label: 'Study', text: 'UC Berkeley', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Xtillion', Icon: BuildingOffice2Icon},
+    {label: 'Languages', text: 'English, Malayalam, Spanish, Arabic', Icon: LanguageIcon},
     {label: 'Interests', text: 'AI/ML, Data Engineering, Software Development', Icon: SparklesIcon},
   ],
 };
