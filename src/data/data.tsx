@@ -62,14 +62,14 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm an <strong className="text-stone-100">AI-native Software Engineer</strong> currently working
-        at <strong className="text-stone-100">Xtillion</strong> in San Juan, Puerto Rico.
-        I graduated from UC Berkeley with a degree in Economics and Data Science.
+        I'm an <strong className="text-stone-100">AI-native Software Engineer</strong> currently working at{' '}
+        <strong className="text-stone-100">Xtillion</strong> in San Juan, Puerto Rico. I graduated from UC Berkeley with
+        a degree in Economics and Data Science.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I combine <strong className="text-stone-100">solid engineering fundamentals</strong> with 
-        <strong className="text-stone-100"> extremely high proficiency in AI tools</strong>, 
-        building scalable applications and leveraging cutting-edge AI to solve complex problems.
+        I combine <strong className="text-stone-100">solid engineering fundamentals</strong> with
+        <strong className="text-stone-100"> extremely high proficiency in AI tools</strong>, building scalable
+        applications and leveraging cutting-edge AI to solve complex problems.
       </p>
     </>
   ),
@@ -184,19 +184,22 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Automatic License Plate Reader (ALPR)',
-    description: 'A Python-based computer vision project for automatic license plate detection and recognition using machine learning and image processing techniques.',
+    description:
+      'A Python-based computer vision project for automatic license plate detection and recognition using machine learning and image processing techniques.',
     url: 'https://github.com',
     image: porfolioImage1,
   },
   {
     title: 'Data Pipeline Projects',
-    description: 'Built scalable data engineering pipelines for processing and analyzing large-scale datasets at Acubed by Airbus.',
+    description:
+      'Built scalable data engineering pipelines for processing and analyzing large-scale datasets at Acubed by Airbus.',
     url: 'https://github.com',
     image: porfolioImage2,
   },
   {
     title: 'Colony Inc. Platform',
-    description: 'Co-founded and developed the technical infrastructure for Colony Inc., focusing on innovative solutions and product development.',
+    description:
+      'Co-founded and developed the technical infrastructure for Colony Inc., focusing on innovative solutions and product development.',
     url: 'https://github.com',
     image: porfolioImage3,
   },
@@ -210,7 +213,13 @@ export const education: TimelineItem[] = [
     date: 'May 2024',
     location: 'University of California, Berkeley',
     title: 'Bachelor of Arts in Economics, Data Science',
-    content: <p>Studied economics, data science, and computer science with a focus on machine learning, statistical analysis, and quantitative methods. Developed strong analytical and problem-solving skills through rigorous coursework and research projects.</p>,
+    content: (
+      <p>
+        Studied economics, data science, and computer science with a focus on machine learning, statistical analysis,
+        and quantitative methods. Developed strong analytical and problem-solving skills through rigorous coursework and
+        research projects.
+      </p>
+    ),
     logo: berkeleyLogo,
   },
 ];
@@ -222,7 +231,8 @@ export const experience: TimelineItem[] = [
     title: 'Software Engineer',
     content: (
       <p>
-        Currently working as a Software Engineer at Xtillion in San Juan, Puerto Rico. Building scalable software solutions and contributing to innovative projects in a dynamic startup environment.
+        Currently working as a Software Engineer at Xtillion in San Juan, Puerto Rico. Building scalable software
+        solutions and contributing to innovative projects in a dynamic startup environment.
       </p>
     ),
     logo: xtillionLogo,
@@ -234,7 +244,8 @@ export const experience: TimelineItem[] = [
     title: 'Cofounder',
     content: (
       <p>
-        Co-founded Colony Inc. in San Francisco, CA. Led product development and technical strategy for a startup focused on innovative solutions. Managed full product lifecycle from concept to deployment.
+        Co-founded Colony Inc. in San Francisco, CA. Led product development and technical strategy for a startup
+        focused on innovative solutions. Managed full product lifecycle from concept to deployment.
       </p>
     ),
     logo: colonyLogo,
@@ -246,7 +257,8 @@ export const experience: TimelineItem[] = [
     title: 'Data Engineering Intern',
     content: (
       <p>
-        Worked on data engineering projects at Acubed by Airbus in Sunnyvale, CA. Developed and optimized data pipelines, worked with large-scale datasets, and contributed to aviation technology innovation projects.
+        Worked on data engineering projects at Acubed by Airbus in Sunnyvale, CA. Developed and optimized data
+        pipelines, worked with large-scale datasets, and contributed to aviation technology innovation projects.
       </p>
     ),
     logo: acubedLogo,
@@ -258,7 +270,8 @@ export const experience: TimelineItem[] = [
     title: 'Data Analyst Intern',
     content: (
       <p>
-        Contributed to healthcare technology projects at Al-Essa Medical in Kuwait City, Kuwait. Gained experience in medical technology and international work environments.
+        Contributed to healthcare technology projects at Al-Essa Medical in Kuwait City, Kuwait. Gained experience in
+        medical technology and international work environments.
       </p>
     ),
     logo: alEssaLogo,

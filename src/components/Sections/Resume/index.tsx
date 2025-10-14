@@ -8,17 +8,21 @@ import TimelineItem from './TimelineItem';
 
 const Resume: FC = memo(() => {
   return (
-    <Section className="bg-neutral-100" sectionId={SectionId.Resume}>
-      <div className="flex flex-col divide-y-2 divide-neutral-300">
+    <Section className="bg-gradient-to-b from-neutral-50 to-neutral-100" sectionId={SectionId.Resume}>
+      <div className="flex flex-col gap-y-12">
         <ResumeSection title="Education">
-          {education.map((item, index) => (
-            <TimelineItem item={item} key={`${item.title}-${index}`} />
-          ))}
+          <div className="flex flex-col gap-y-4">
+            {education.map((item, index) => (
+              <TimelineItem item={item} key={`${item.title}-${index}`} />
+            ))}
+          </div>
         </ResumeSection>
-        <ResumeSection title="Work">
-          {experience.map((item, index) => (
-            <TimelineItem item={item} key={`${item.title}-${index}`} />
-          ))}
+        <ResumeSection title="Work Experience">
+          <div className="flex flex-col gap-y-4">
+            {experience.map((item, index) => (
+              <TimelineItem item={item} key={`${item.title}-${index}`} />
+            ))}
+          </div>
         </ResumeSection>
         <ResumeSection title="Skills">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
