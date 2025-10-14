@@ -130,18 +130,68 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'AI/ML',
+    name: 'AI/ML & Data Science',
     skills: [
       {
-        name: 'LangSmith',
+        name: 'LangSmith/LangChain',
         level: 8,
+      },
+      {
+        name: 'TensorFlow/PyTorch',
+        level: 7,
+      },
+      {
+        name: 'Pandas/NumPy',
+        level: 8.5,
+      },
+      {
+        name: 'Scikit-learn',
+        level: 8,
+      },
+      {
+        name: 'OpenCV',
+        level: 7,
       },
       {
         name: 'Model Performance Evaluation',
         level: 8,
       },
+    ],
+  },
+  {
+    name: 'Cloud & DevOps',
+    skills: [
       {
-        name: 'MCP Architecture',
+        name: 'AWS (EC2, S3, Lambda)',
+        level: 7.5,
+      },
+      {
+        name: 'Docker',
+        level: 7.5,
+      },
+      {
+        name: 'Git/GitHub',
+        level: 9,
+      },
+      {
+        name: 'CI/CD',
+        level: 7,
+      },
+    ],
+  },
+  {
+    name: 'Tools & Platforms',
+    skills: [
+      {
+        name: 'Jupyter Notebooks',
+        level: 9,
+      },
+      {
+        name: 'VS Code/Cursor',
+        level: 9,
+      },
+      {
+        name: 'Linux/Unix',
         level: 8,
       },
     ],
@@ -164,19 +214,19 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Personal Interests',
+    name: 'Domain Knowledge',
     skills: [
       {
-        name: 'Aviation',
-        level: 10,
+        name: 'Aviation Technology',
+        level: 8,
       },
       {
-        name: 'Fitness',
-        level: 10,
+        name: 'Economics & Finance',
+        level: 8,
       },
       {
-        name: 'Physical AI',
-        level: 10,
+        name: 'Statistical Analysis',
+        level: 8,
       },
     ],
   },
