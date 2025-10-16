@@ -81,6 +81,10 @@ export interface PortfolioItem {
   description: string;
   url: string;
   image: string | StaticImageData;
+  company: string;
+  category: 'work' | 'personal' | 'academic';
+  technologies: string[];
+  year: string;
 }
 
 /**

@@ -6,6 +6,8 @@ const sections = [
   {id: SectionId.Hero, label: 'Home'},
   {id: SectionId.About, label: 'About'},
   {id: SectionId.Resume, label: 'Resume'},
+  {id: SectionId.Portfolio, label: 'Portfolio'},
+  {id: SectionId.Skills, label: 'Skills'},
 ];
 
 const SectionIndicator: FC = memo(() => {

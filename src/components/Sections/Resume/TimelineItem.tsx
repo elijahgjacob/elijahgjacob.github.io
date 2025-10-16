@@ -19,7 +19,7 @@ const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
           <div className="flex flex-col pb-3">
             <div className="flex items-center justify-center gap-x-3 md:justify-start">
               {logo && (
-                <div className="relative h-12 w-12 flex-shrink-0 rounded-lg bg-white p-1 shadow-sm">
+                <div className="relative h-14 w-14 flex-shrink-0 rounded-lg bg-white p-0.5 shadow-sm">
                   <Image alt={`${location} logo`} className="h-full w-full object-contain" src={logo} />
                 </div>
               )}

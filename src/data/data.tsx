@@ -14,9 +14,12 @@ import acubedLogo from '../images/Acubed.png';
 import alEssaLogo from '../images/AlEssa.png';
 import colonyLogo from '../images/Colony.png';
 import heroImage from '../images/hero-background.jpg';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
+import diseasepredImage from '../images/portfolio/diseasepred.jpg';
+import foundersincImage from '../images/portfolio/foundersinc.png';
+import malakImage from '../images/portfolio/malak.png';
+import porfolioImage2 from '../images/portfolio/traffic.png';
+import porfolioImage1 from '../images/portfolio/wayfinder.png';
+import xtillionosImage from '../images/portfolio/xtillionos.png';
 import profilepic from '../images/profilepic.jpg';
 import berkeleyLogo from '../images/Seal_of_University_of_California,_Berkeley.svg';
 import xtillionLogo from '../images/Xtillion-new.jpg';
@@ -62,18 +65,13 @@ export const heroData: Hero = {
   imageSrc: heroImage,
   name: `Hi! I'm Elijah Jacob`,
   description: (
-    <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm an <strong className="text-stone-100">AI-native Software Engineer</strong> currently working at{' '}
-        <strong className="text-stone-100">Xtillion</strong> in San Juan, Puerto Rico. I graduated from UC Berkeley with
-        a degree in Economics and Data Science.
-      </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I combine <strong className="text-stone-100">solid engineering fundamentals</strong> with
-        <strong className="text-stone-100"> extremely high proficiency in AI tools</strong>, building scalable
-        applications and leveraging cutting-edge AI to solve complex problems.
-      </p>
-    </>
+    <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+      I'm an <strong className="text-stone-100">AI-native Software Engineer</strong> at{' '}
+      <strong className="text-stone-100">Xtillion</strong> in San Juan, Puerto Rico, specializing in transforming large
+      datasets into production-ready systems that solve real-world problems. With a UC Berkeley background in Economics
+      and Data Science, I bridge the gap between complex data analysis and scalable software solutions, having built
+      everything from computer vision systems to aviation navigation platforms.
+    </p>
   ),
   actions: [
     {
@@ -95,7 +93,9 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I'm an AI-native Software Engineer currently working at Xtillion in San Juan, Puerto Rico. I graduated from UC Berkeley with a degree in Economics and Data Science. I combine solid engineering fundamentals with extremely high proficiency in AI tools, building scalable applications and leveraging cutting-edge AI to solve complex problems. I have experience in building scalable software solutions, data engineering pipelines, and full-stack applications, and I'm passionate about using technology to create impactful solutions and continuously learning new technologies.`,
+  description: `I'm a software engineer with a background in economics and data science from UC Berkeley. 
+  I have experience in building scalable software solutions, data engineering pipelines, and full-stack applications.
+  I'm passionate about using technology to create impactful solutions and continuously learning new technologies.`,
   aboutItems: [
     {label: 'Location', text: 'San Juan, Puerto Rico', Icon: MapIcon},
     {label: 'Study', text: 'UC Berkeley', Icon: AcademicCapIcon},
@@ -218,26 +218,76 @@ export const skills: SkillGroup[] = [
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
+  // 2025 Projects (Most Recent)
   {
-    title: 'Automatic License Plate Reader (ALPR)',
+    title: 'License Plate Reader (LPR)',
     description:
-      'A Python-based computer vision project for automatic license plate detection and recognition using machine learning and image processing techniques.',
-    url: 'https://github.com',
-    image: porfolioImage1,
-  },
-  {
-    title: 'Data Pipeline Projects',
-    description:
-      'Built scalable data engineering pipelines for processing and analyzing large-scale datasets at Acubed by Airbus.',
-    url: 'https://github.com',
+      'Advanced computer vision system for automatic license plate detection and recognition using Roboflow, YOLO, and PaddleOCR. Features real-time video processing, vehicle tracking with SORT algorithm, and comprehensive performance analytics with Supabase integration.',
+    url: 'https://github.com/elijahgjacob/lpr',
     image: porfolioImage2,
+    company: 'Personal',
+    category: 'personal',
+    technologies: ['Python', 'OpenCV', 'YOLO', 'PaddleOCR', 'Roboflow', 'Supabase', 'SORT'],
+    year: '2025',
   },
   {
-    title: 'Colony Inc. Pitch Deck',
+    title: 'AI Chatbot System',
     description:
-      'Co-founded and developed the technical infrastructure for Colony Inc., focusing on innovative solutions and product development.',
-    url: 'https://github.com',
-    image: porfolioImage3,
+      'Intelligent chatbot application with natural language processing capabilities. Built with modern AI frameworks, featuring conversation management, context awareness, and seamless integration with various messaging platforms.',
+    url: 'https://github.com/elijahgjacob/chatbot',
+    image: malakImage,
+    company: 'Personal',
+    category: 'personal',
+    technologies: ['Python', 'LangChain', 'OpenAI', 'FastAPI', 'React', 'Docker'],
+    year: '2025',
+  },
+  {
+    title: 'AI-Powered Data Analytics Platform',
+    description:
+      'Built a comprehensive data analytics platform at Xtillion using Python, FastAPI, and React. Implemented real-time data processing, machine learning pipelines, and interactive dashboards for business intelligence.',
+    url: 'https://github.com/elijahgjacob/xtillion-analytics',
+    image: xtillionosImage,
+    company: 'Xtillion',
+    category: 'work',
+    technologies: ['LangChain', 'MCP Architecture', 'LLMs'],
+    year: '2025',
+  },
+
+  // 2024 Projects
+  {
+    title: 'Disease Prediction Model',
+    description:
+      'Machine learning system for medical disease prediction using patient data and symptoms. Implements advanced ML algorithms with high accuracy rates, featuring data preprocessing, model training, and prediction APIs for healthcare applications.',
+    url: 'https://github.com/elijahgjacob/disease-prediction',
+    image: diseasepredImage,
+    company: 'Personal',
+    category: 'personal',
+    technologies: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Flask', 'SQLite'],
+    year: '2024',
+  },
+  {
+    title: 'Colony Inc. Technical Infrastructure',
+    description:
+      'Co-founded and developed the complete technical infrastructure for Colony Inc. Built the backend API, database design, and frontend application from scratch. Implemented user authentication, payment processing, and core business logic.',
+    url: '/assets/colony-pitch-deck.pdf',
+    image: foundersincImage,
+    company: 'Colony Inc.',
+    category: 'work',
+    technologies: [],
+    year: '2024',
+  },
+
+  // 2023 Projects
+  {
+    title: 'Wayfinder - Aviation Navigation',
+    description:
+      'Innovative aviation navigation system developed at Acubed by Airbus. Advanced flight path optimization and navigation assistance for pilots, featuring real-time data processing and intuitive user interfaces for enhanced flight safety.',
+    url: 'https://acubed.airbus.com/projects/wayfinder/',
+    image: porfolioImage1,
+    company: 'Acubed by Airbus',
+    category: 'work',
+    technologies: ['Python', 'Pandas', 'Linux', 'Real-time Systems'],
+    year: '2023',
   },
 ];
 
