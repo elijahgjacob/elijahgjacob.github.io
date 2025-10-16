@@ -1,11 +1,12 @@
 {
-  "name": "react-resume-template",
-  "short_name": "react-resume-template",
+  "name": "Elijah Jacob - AI Software Engineer",
+  "short_name": "Elijah Jacob",
   "icons": [
+    {"src": "/favicon.png", "type": "image/png", "sizes": "any"},
     {"src": "/icon-192.png", "type": "image/png", "sizes": "192x192"},
     {"src": "/icon-512.png", "type": "image/png", "sizes": "512x512"}
   ],
-  "theme_color": "#515455",
-  "background_color": "#515455",
+  "theme_color": "#1e40af",
+  "background_color": "#000000",
   "display": "standalone"
 }
