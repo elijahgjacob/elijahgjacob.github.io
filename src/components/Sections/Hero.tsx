@@ -14,10 +14,12 @@ const Hero: FC = memo(() => {
 
   useEffect(() => {
     if (currentIndex < name.length) {
+      // Add a pause after "Hi!" (3 characters)
+      const delay = currentIndex === 3 ? 500 : 100;
       const timeout = setTimeout(() => {
         setDisplayedText(prev => prev + name[currentIndex]);
         setCurrentIndex(prev => prev + 1);
-      }, 100); // Adjust speed here (lower = faster)
+      }, delay);
 
       return () => clearTimeout(timeout);
     }
@@ -26,14 +28,25 @@ const Hero: FC = memo(() => {
 
   // Split text to style "Elijah Jacob" in blue
   const renderTypedText = () => {
-    const prefix = "Hi! I'm ";
+    const prefix = "Hi!";
+    const middle = " I'm ";
     if (displayedText.length <= prefix.length) {
       return <>{displayedText}</>;
+    } else if (displayedText.length <= prefix.length + middle.length) {
+      return (
+        <>
+          {prefix}
+          <br />
+          {displayedText.substring(prefix.length)}
+        </>
+      );
     }
     return (
       <>
         {prefix}
-        <span className="text-blue-700">{displayedText.substring(prefix.length)}</span>
+        <br />
+        {middle}
+        <span className="text-blue-700">{displayedText.substring(prefix.length + middle.length)}</span>
       </>
     );
   };
@@ -57,7 +70,7 @@ const Hero: FC = memo(() => {
             <div className="absolute -inset-0.5 rounded-2xl bg-black opacity-0 blur transition-opacity duration-500 group-hover:opacity-40" />
 
             <h1
-              className="relative bg-gradient-to-r from-white via-blue-100 to-cyan-200 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl lg:text-7xl"
+              className="relative bg-gradient-to-r from-white via-blue-100 to-cyan-200 bg-clip-text text-3xl font-bold text-transparent text-center sm:text-4xl md:text-5xl lg:text-6xl"
               style={{
                 backgroundSize: '200% auto',
                 animation: 'shimmer 4s linear infinite',
