@@ -21,8 +21,8 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
-        <link rel="icon" href="/favicon.png" />
-        <link rel="shortcut icon" href="/favicon.png" />
+        <link href="/favicon.png" rel="icon" />
+        <link href="/favicon.png" rel="shortcut icon" />
       </Head>
       <body className="bg-black">
         <Main />
