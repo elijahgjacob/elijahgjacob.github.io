@@ -162,40 +162,6 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Cloud & DevOps',
-    skills: [
-      {
-        name: 'AWS (EC2, S3, Lambda)',
-        level: 7.5,
-      },
-      {
-        name: 'Docker',
-        level: 7.5,
-      },
-      {
-        name: 'Git/GitHub',
-        level: 9,
-      },
-    ],
-  },
-  {
-    name: 'Tools & Platforms',
-    skills: [
-      {
-        name: 'Jupyter Notebooks',
-        level: 9,
-      },
-      {
-        name: 'VS Code/Cursor',
-        level: 9,
-      },
-      {
-        name: 'Linux/Unix',
-        level: 8,
-      },
-    ],
-  },
-  {
     name: 'Domain Expertise',
     skills: [
       {
