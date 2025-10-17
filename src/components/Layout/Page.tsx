@@ -15,7 +15,7 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
         <meta content={description} name="description" />
 
         {/* several domains list the same content, make sure google knows we mean this one. */}
-        <link href={`https://reactresume.com${pathname}`} key="canonical" rel="canonical" />
+        <link href={`https://elijahgjacob.github.io${pathname}`} key="canonical" rel="canonical" />
 
         <link href="/favicon.ico" rel="icon" sizes="any" />
         <link href="/favicon.png" rel="icon" type="image/png" />
@@ -25,11 +25,18 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
         {/* Open Graph : https://ogp.me/ */}
         <meta content={title} property="og:title" />
         <meta content={description} property="og:description" />
-        <meta content={`https://reactresume.com${pathname}`} property="og:url" />
+        <meta content={`https://elijahgjacob.github.io${pathname}`} property="og:url" />
+        <meta content="website" property="og:type" />
+        <meta content="Elijah Jacob" property="og:site_name" />
+        <meta content="https://elijahgjacob.github.io/favicon.png" property="og:image" />
+        <meta content="512" property="og:image:width" />
+        <meta content="512" property="og:image:height" />
 
         {/* Twitter: https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup */}
+        <meta content="summary" name="twitter:card" />
         <meta content={title} name="twitter:title" />
         <meta content={description} name="twitter:description" />
+        <meta content="https://elijahgjacob.github.io/favicon.png" name="twitter:image" />
       </Head>
       {children}
     </>
